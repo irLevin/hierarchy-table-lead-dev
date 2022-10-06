@@ -1,11 +1,11 @@
 # hierarchy-table-lead-dev
 What do you think about the overall structure of this component?
 
-From my point of view this component should be splitted to the smallest components, such as: Parent Component as is (HierarchyTable), TableHeader, TableRow according to the Single Responsibility Principle. Also I would prefer atomic reusable components such as buttons. In case more wide components with more complex logic maybe to split component according to MVC patter in order to improve readability and maintaince of the code.
+From my point of view this component should be splitted to the smallest components, such as: Parent Component as is (HierarchyTable), TableHeader, TableRow according to the Single Responsibility Principle. Also I would prefer create separate reusable atomic components such as buttons etc in case that any material design library not used. In case more wide components with more complex logic maybe to split component according to MVC patter in order to improve readability and maintaince of the code.
 
 Do you see any broken features, bugs or deficits? How would you fix them?
 for instance in case the row is expandable - the icon should be shown, otherwise - not, because it confuses the user, not good for user expirience (fixed)
-delete function (the task itself) - missing update function that will check if the object does not have "kids" we dont need to show it, also object data should be defined correctly in the controller (ts) in order reactivly update object according to the store. (fixed)
+delete function (the task itself) - missing update function that will check if the object does not have "kids" we dont need to show it, also object data should be defined correctly in the controller (ts) in order reactively update object according to the store. (fixed)
 
 What would be the most valuable improvements ?
 1. introducing additional models(types/interfaces depends) that will cover data objects. Also for Table sub-components: TableProps, TableHeaders
